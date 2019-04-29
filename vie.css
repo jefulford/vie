@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Cabin:400,600,700|Quicksand:400,500,700");
+
+p {
+	padding: 0px;
+	margin: 0px;
+	line-height: 1.0;
+}
+
+:root {
+	--shadow: #D6D0D0;
+	--face: #FFF8F7;
+}
+.quarter {
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	z-index: 1;
+	transition: height 1s ,width 1s;
+}
+#topleft {
+	top: 0;
+	left: 0;
+	background-color: #55B2AB;
+}
+#topright {
+	top: 0;
+	right: 0;
+	background-color: #FFB793;
+}
+#bottomleft {
+	bottom: 0;
+	left: 0;
+	background-color: #B26843;
+}
+#bottomright {
+	bottom: 0;
+	right: 0;
+	background-color: #ADFFF9;
+}
+#centereye {
+	position: absolute;
+	top: 36%;
+	left: 33%;
+	z-index: 2;
+	width: 30%;
+	height: 20%;
+	background-color: var(--face);
+	color: black;
+	font-family: Quicksand;
+	font-size: 60px;
+	padding: 2%;
+	box-shadow: -1px 1px 0px var(--shadow),
+		-2px 2px 0px var(--shadow),
+		-3px 3px 0px var(--shadow),
+		-4px 4px 0px var(--shadow),
+		-5px 5px 0px var(--shadow),
+		-6px 6px 0px var(--shadow),
+		-7px 7px 0px var(--shadow),
+		-8px 8px 0px var(--shadow),
+		-9px 9px 0px var(--shadow),
+		-10px 10px 0px var(--shadow)
+	;
+	cursor: hand;
+	cursor: pointer;
+}
+#centereye p {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+.hidden {
+	display: none;
+}
+.takeover {
+	width: 90%;
+	height: 90%;
+}
+
+#backhome {
+	position: absolute;
+	z-index: 10;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 0px;
+	background-color: var(--face);
+	color: black;
+	font-family: Quicksand;
+	text-transform: uppercase;
+	width: 150px;
+	text-align: center;
+	box-shadow: 
+		-1px 1px 0px var(--shadow),
+		-2px 2px 0px var(--shadow),
+		-3px 3px 0px var(--shadow),
+		-4px 4px 0px var(--shadow),
+		-5px 5px 0px var(--shadow)
+	;
+	cursor: hand;
+	cursor: pointer;
+}
+#backhome:active {
+	background-color: var(--shadow);
+}
+
+.content {
+	padding: 20px;
+}
+.title {
+	font-family: Quicksand;
+	font-size: 40px;
+}
+.byline {
+	font-family: Cabin;
+	font-weight: 300;
+	font-size: 20px;
+	color: rgba(0,0,0,.8);
+	padding-top: 10px;
+	padding-bottom: 25px;
+	font-style: italic;
+	margin-left: 20px;
+}
+.body {
+	font-family: Cabin;
+	line-height: 1.8;
+	font-size: 15.6px;
+}
+.tab {
+	margin-left: 20px;
+}
